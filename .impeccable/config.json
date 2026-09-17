@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-17T10:11:43.971Z",
+        "reason": "Claude, verified in desktop and mobile captures: sections carry a centred .container child that provides the 20-64px inset; the detector reads the section's own zero horizontal padding"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-09-17T10:12:18.489Z",
+        "reason": "Claude: single justified marquee for twelve asset classes that need breadth not individual attention; pauses on hover and focus, static and wrapped under prefers-reduced-motion, duplicate track aria-hidden"
+      }
+    ]
+  }
+}

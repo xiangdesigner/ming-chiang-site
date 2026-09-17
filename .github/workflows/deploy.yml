@@ -1,0 +1,59 @@
+# Publishes the static site to GitHub Pages on every push to main.
+# There is no build step: the repository root is the site.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Verify the static site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax-check the scripts
+        run: |
+          node --check main.js
+          node --check i18n.js
+          node --check city-layout.js
+          cp hero-model.js /tmp/hero-model.mjs && node --check /tmp/hero-model.mjs
+      - name: Confirm every referenced local asset exists
+        run: |
+          node -e '
+            const fs = require("fs");
+            const html = fs.readFileSync("index.html", "utf8") + fs.readFileSync("styles.css", "utf8");
+            const refs = new Set([...html.matchAll(/(?:src|href|srcset|url)\(?=?["\x27 ]*([^"\x27 ),]+\.(?:css|js|jpg|webp|png|gif|woff2|svg))/g)].map(m => m[1]).filter(p => !/^https?:|^data:/.test(p)));
+            const missing = [...refs].filter(p => !fs.existsSync(p.replace(/^\.\//, "")));
+            if (missing.length) { console.error("Missing assets:", missing); process.exit(1); }
+            console.log("Checked", refs.size, "local asset references");
+          '
+
+  deploy:
+    name: Deploy
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,18 @@
+# Local tooling and session artefacts, not part of the site
+.claude/
+.playwright-mcp/
+skills-lock.json
+.impeccable/review/
+.impeccable/hook.cache.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Never commit environment files or credentials
+.env
+.env.*
+*.pem
+*.key

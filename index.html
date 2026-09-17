@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>茗強地政與土管｜臺中不動產估價・都市計畫・地政士</title>
+  <meta name="description" content="臺中不動產估價、都市計畫、土地登記、不動產仲介與資產評價。自 2014 年起，五家持照事務所隸屬同一專業團隊，由蘇又德博士主持。">
+  <meta name="theme-color" content="#F3F4F1">
+  <meta property="og:title" content="茗強地政與土管">
+  <meta property="og:description" content="估價、規劃、登記、仲介與評價，自 2014 年起由臺中同一個持照專業團隊一手完成。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="en_US">
+  <!-- Language alternates: make these absolute URLs at deploy (see README) -->
+  <link rel="alternate" hreflang="zh-TW" href="./?lang=zh-TW">
+  <link rel="alternate" hreflang="en" href="./?lang=en">
+  <link rel="alternate" hreflang="x-default" href="./">
+  <meta property="og:image" content="assets/img/poster.jpg">
+  <link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    /* Motion gate: the page renders complete without this. Only when JS runs and the
+       visitor has not asked for reduced motion do entrance states get hidden. */
+    /* Language: the page is written in Traditional Chinese; a saved or requested English choice is applied
+   by i18n.js before first paint, so the body stays hidden for that one frame. */
+try {
+  var mcLang = new URLSearchParams(location.search).get('lang') || localStorage.getItem('mc-lang');
+  if (mcLang === 'en') {
+    document.documentElement.lang = 'en'; document.documentElement.classList.add('lang-pending');
+    setTimeout(function () { document.documentElement.classList.remove('lang-pending'); }, 2000); /* never leave the page blank if i18n.js fails */
+  }
+} catch (e) { /* storage unavailable: stay in Chinese */ }
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('has-motion');
+    }
+    document.documentElement.classList.add('js');
+    try {
+      if (sessionStorage.getItem('mc-intro') === '1') document.documentElement.classList.add('no-intro');
+    } catch (e) { /* storage unavailable: play the intro */ }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "茗強地政與土管",
+    "alternateName": "Ming Chiang Land Economics & Land Management",
+    "description": "Real estate appraisal, urban planning, land registration, brokerage and asset valuation in Taichung, Taiwan.",
+    "telephone": "+886-4-2202-2662",
+    "faxNumber": "+886-4-2202-2737",
+    "email": "mingattorney@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2F., No. 3, Ln. 252, Minquan Rd.",
+      "addressLocality": "West Dist., Taichung City",
+      "addressCountry": "TW"
+    },
+    "founder": { "@type": "Person", "name": "蘇又德", "alternateName": "Dr. Su You-De" },
+    "foundingDate": "2014"
+  }
+  </script>
+</head>
+<body>
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <!-- Phosphor Icons (MIT) via Iconify -->
+    <!-- Company mark: the faceted MC hexagon, recreated as SVG from the supplied logo -->
+    <symbol id="mc-logo" viewBox="-104 -104 208 208">
+      <polygon class="lg-facet" points="0,-100 43.3,-75 0,-56" fill="#0E3A63"/>
+      <polygon class="lg-facet" points="43.3,-75 48.5,-28 0,-56" fill="#1E6FA9"/>
+      <polygon class="lg-facet" points="43.3,-75 86.6,-50 48.5,-28" fill="#2C8BC9"/>
+      <polygon class="lg-facet" points="86.6,-50 86.6,0 48.5,-28" fill="#123F6B"/>
+      <polygon class="lg-facet" points="86.6,0 48.5,28 48.5,-28" fill="#2F8FCB"/>
+      <polygon class="lg-facet" points="86.6,0 86.6,50 48.5,28" fill="#164F86"/>
+      <polygon class="lg-facet" points="86.6,50 43.3,75 48.5,28" fill="#0B2E55"/>
+      <polygon class="lg-facet" points="43.3,75 0,56 48.5,28" fill="#1F6FA8"/>
+      <polygon class="lg-facet" points="43.3,75 0,100 0,56" fill="#3A9AD4"/>
+      <polygon class="lg-facet" points="0,100 -43.3,75 0,56" fill="#164A7C"/>
+      <polygon class="lg-facet" points="-43.3,75 -48.5,28 0,56" fill="#5FB3E0"/>
+      <polygon class="lg-facet" points="-43.3,75 -86.6,50 -48.5,28" fill="#1B5C93"/>
+      <polygon class="lg-facet" points="-86.6,50 -86.6,0 -48.5,28" fill="#0F3B66"/>
+      <polygon class="lg-facet" points="-86.6,0 -48.5,-28 -48.5,28" fill="#2A7FBF"/>
+      <polygon class="lg-facet" points="-86.6,0 -86.6,-50 -48.5,-28" fill="#154A80"/>
+      <polygon class="lg-facet" points="-86.6,-50 -43.3,-75 -48.5,-28" fill="#1A5A90"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-56 -48.5,-28" fill="#3D9BD6"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-100 0,-56" fill="#0E3A63"/>
+      <polygon class="lg-core" points="0,-56 48.5,-28 48.5,28 0,56 -48.5,28 -48.5,-28" fill="#FFFFFF"/>
+      <g class="lg-mark" transform="translate(-40,-22.4) scale(0.8)" fill="#12345F">
+        <path class="lg-mark-path" d="M0 0h14l14 18 14-18h14v56h-13V22L28 40 13 22v34H0z"/>
+        <path class="lg-mark-path" d="M64 0h36v13H77v30h23v13H64z"/>
+      </g>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 256 256"><path fill="currentColor" d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8 8 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62M176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.6.6 0 0 0 0 .12l21 47l-20.67 24.74a6 6 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8 8 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 256 256"><path fill="currentColor" d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-20.57 16L128 133.15L52.57 64ZM216 192H40V74.19l82.59 75.71a8 8 0 0 0 10.82 0L216 74.19z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 256 256"><path fill="currentColor" d="M128 64a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 64a24 24 0 1 1 24-24a24 24 0 0 1-24 24m0-112a88.1 88.1 0 0 0-88 88c0 31.4 14.51 64.68 42 96.25a254.2 254.2 0 0 0 41.45 38.3a8 8 0 0 0 9.18 0a254.2 254.2 0 0 0 41.37-38.3c27.45-31.57 42-64.85 42-96.25a88.1 88.1 0 0 0-88-88m0 206c-16.53-13-72-60.75-72-118a72 72 0 0 1 144 0c0 57.23-55.47 105-72 118"/></symbol>
+    <symbol id="i-fax" viewBox="0 0 256 256"><path fill="currentColor" d="M214.67 72H200V40a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8v32H41.33C27.36 72 16 82.77 16 96v80a8 8 0 0 0 8 8h32v32a8 8 0 0 0 8 8h128a8 8 0 0 0 8-8v-32h32a8 8 0 0 0 8-8V96c0-13.23-11.36-24-25.33-24M72 48h112v24H72Zm112 160H72v-48h112Zm40-40h-24v-16a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8v16H32V96c0-4.41 4.19-8 9.33-8h173.34c5.14 0 9.33 3.59 9.33 8Zm-24-52a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path fill="currentColor" d="M200 64v104a8 8 0 0 1-16 0V83.31L69.66 197.66a8 8 0 0 1-11.32-11.32L172.69 72H88a8 8 0 0 1 0-16h104a8 8 0 0 1 8 8"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 256 256"><path fill="currentColor" d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32"/></symbol>
+    <symbol id="i-x" viewBox="0 0 256 256"><path fill="currentColor" d="M205.66 194.34a8 8 0 0 1-11.32 11.32L128 139.31l-66.34 66.35a8 8 0 0 1-11.32-11.32L116.69 128L50.34 61.66a8 8 0 0 1 11.32-11.32L128 116.69l66.34-66.35a8 8 0 0 1 11.32 11.32L139.31 128Z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 256 256"><path fill="currentColor" d="M224 128a8 8 0 0 1-8 8H40a8 8 0 0 1 0-16h176a8 8 0 0 1 8 8M40 72h176a8 8 0 0 0 0-16H40a8 8 0 0 0 0 16m176 112H40a8 8 0 0 0 0 16h176a8 8 0 0 0 0-16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 256 256"><path fill="currentColor" d="m229.66 77.66l-128 128a8 8 0 0 1-11.32 0l-56-56a8 8 0 0 1 11.32-11.32L96 188.69L218.34 66.34a8 8 0 0 1 11.32 11.32"/></symbol>
+    <symbol id="i-warning" viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24m0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88m-8-80V80a8 8 0 0 1 16 0v56a8 8 0 0 1-16 0m20 36a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></symbol>
+  </svg>
+
+  <!-- Intro: the logo assembles once per session, then wipes into the page. Hidden without motion. -->
+  <div class="preloader" data-preloader aria-hidden="true">
+    <svg class="preloader__logo" viewBox="-210 -160 420 320" focusable="false">
+      <g class="lg-ring">
+      <polygon class="lg-facet" points="0,-100 43.3,-75 0,-56" fill="#0E3A63"/>
+      <polygon class="lg-facet" points="43.3,-75 48.5,-28 0,-56" fill="#1E6FA9"/>
+      <polygon class="lg-facet" points="43.3,-75 86.6,-50 48.5,-28" fill="#2C8BC9"/>
+      <polygon class="lg-facet" points="86.6,-50 86.6,0 48.5,-28" fill="#123F6B"/>
+      <polygon class="lg-facet" points="86.6,0 48.5,28 48.5,-28" fill="#2F8FCB"/>
+      <polygon class="lg-facet" points="86.6,0 86.6,50 48.5,28" fill="#164F86"/>
+      <polygon class="lg-facet" points="86.6,50 43.3,75 48.5,28" fill="#0B2E55"/>
+      <polygon class="lg-facet" points="43.3,75 0,56 48.5,28" fill="#1F6FA8"/>
+      <polygon class="lg-facet" points="43.3,75 0,100 0,56" fill="#3A9AD4"/>
+      <polygon class="lg-facet" points="0,100 -43.3,75 0,56" fill="#164A7C"/>
+      <polygon class="lg-facet" points="-43.3,75 -48.5,28 0,56" fill="#5FB3E0"/>
+      <polygon class="lg-facet" points="-43.3,75 -86.6,50 -48.5,28" fill="#1B5C93"/>
+      <polygon class="lg-facet" points="-86.6,50 -86.6,0 -48.5,28" fill="#0F3B66"/>
+      <polygon class="lg-facet" points="-86.6,0 -48.5,-28 -48.5,28" fill="#2A7FBF"/>
+      <polygon class="lg-facet" points="-86.6,0 -86.6,-50 -48.5,-28" fill="#154A80"/>
+      <polygon class="lg-facet" points="-86.6,-50 -43.3,-75 -48.5,-28" fill="#1A5A90"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-56 -48.5,-28" fill="#3D9BD6"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-100 0,-56" fill="#0E3A63"/>
+      </g>
+      <polygon class="lg-core" points="0,-56 48.5,-28 48.5,28 0,56 -48.5,28 -48.5,-28" fill="#FFFFFF"/>
+      <g class="lg-mark" transform="translate(-40,-22.4) scale(0.8)" fill="#12345F">
+        <path class="lg-mark-path" d="M0 0h14l14 18 14-18h14v56h-13V22L28 40 13 22v34H0z"/>
+        <path class="lg-mark-path" d="M64 0h36v13H77v30h23v13H64z"/>
+      </g>
+      <g class="lg-values">
+        <g transform="translate(0,-128)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="-4" y="0" text-anchor="end">M</text><text class="lg-word" x="4" y="0" text-anchor="start" lang="zh-Hant">互助</text></g></g>
+        <g transform="translate(106,-64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="0" y="0" text-anchor="start">R</text><text class="lg-word" x="30" y="0" text-anchor="start" lang="zh-Hant">可靠</text></g></g>
+        <g transform="translate(106,64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="0" y="0" text-anchor="start">A</text><text class="lg-word" x="30" y="0" text-anchor="start" lang="zh-Hant">精確</text></g></g>
+        <g transform="translate(0,128)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="-4" y="0" text-anchor="end">F</text><text class="lg-word" x="4" y="0" text-anchor="start" lang="zh-Hant">清新</text></g></g>
+        <g transform="translate(-106,64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-word" x="-30" y="0" text-anchor="end" lang="zh-Hant">熱忱</text><text class="lg-letter" x="0" y="0" text-anchor="end">E</text></g></g>
+        <g transform="translate(-106,-64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-word" x="-30" y="0" text-anchor="end" lang="zh-Hant">認真</text><text class="lg-letter" x="0" y="0" text-anchor="end">C</text></g></g>
+      </g>
+    </svg>
+  </div>
+
+  <a class="skip-link" href="#main" data-i18n="nav.skip">跳至主要內容</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="茗強地政與土管，回到首頁" data-i18n-attr="aria-label:brand.aria">
+        <svg class="brand__mark" viewBox="-104 -104 208 208" aria-hidden="true" focusable="false"><use href="#mc-logo" x="-104" y="-104" width="208" height="208"/></svg>
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="brand.name">茗強</span>
+          <span class="brand__sub" data-i18n="brand.sub">地政與土管</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="主要導覽" data-i18n-attr="aria-label:nav.aria">
+        <ul class="site-nav__list">
+          <li><a href="#offices" data-i18n="nav.offices">事務所</a></li>
+          <li><a href="#services" data-i18n="nav.services">服務項目</a></li>
+          <li><a href="#public-sector" data-i18n="nav.public">公部門</a></li>
+          <li><a href="#leadership" data-i18n="nav.leadership">主持人</a></li>
+          <li><a href="#academy" data-i18n="nav.academy">學院</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="語言" data-i18n-attr="aria-label:nav.language" data-lang-switch>
+          <button type="button" data-lang="zh-TW" lang="zh-TW" aria-pressed="true">繁中</button><span class="lang-switch__sep" aria-hidden="true">/</span><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn--solid btn--sm" href="#contact" data-i18n="cta.contact">聯絡我們</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle__label" data-i18n="nav.menu">選單</span>
+        <span class="nav-toggle__icons" aria-hidden="true">
+          <svg class="nav-toggle__icon nav-toggle__icon--open" width="22" height="22"><use href="#i-list"/></svg>
+          <svg class="nav-toggle__icon nav-toggle__icon--close" width="22" height="22"><use href="#i-x"/></svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-hero>
+      <div class="hero__stage" data-hero-stage>
+        <!-- Static poster: shown when WebGL is unavailable. Synthetic model is drawn by hero-model.js -->
+        <picture><source type="image/webp" srcset="assets/img/poster-800.webp 800w, assets/img/poster.webp 1600w" sizes="(min-width: 901px) 60vw, 100vw"><img class="hero__poster" src="assets/img/poster.jpg" width="1600" height="1291" alt="灰色底座上的白色城市街廓量體模型，其中一筆土地以紅色標示" fetchpriority="high" data-hero-poster data-i18n-attr="alt:hero.posterAlt" srcset="assets/img/poster-800.jpg 800w, assets/img/poster.jpg 1600w" sizes="(min-width: 901px) 60vw, 100vw"></picture>
+        <canvas class="hero__canvas" data-hero-canvas aria-hidden="true"></canvas>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-split="words" data-i18n="hero.title">從一筆土地，到一家企業。</h1>
+          <p class="hero__lede" data-reveal-soft data-split="lede" data-i18n="hero.lede">估價、規劃、登記、仲介與評價，自 2014 年起由臺中同一個持照專業團隊一手完成。</p>
+          <div class="hero__actions" data-reveal-soft>
+            <a class="btn btn--solid" href="#contact" data-magnetic data-i18n="cta.contact">聯絡我們</a>
+            <a class="btn btn--outline" href="#services" data-magnetic data-i18n="cta.services">瀏覽服務</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFICES ============ -->
+    <section class="section offices" id="offices">
+      <div class="container offices__grid">
+        <div class="offices__intro">
+          <h2 class="h-display" data-split="words" data-i18n="offices.title">一個團隊，五家持照事務所。</h2>
+          <p data-split="lede" data-i18n="offices.lede">每一家事務所都持有其業務所需的專業執照。從估價、規劃、登記到交易，客戶不必更換事務所，即可一路完成。</p>
+        </div>
+
+        <ol class="index rule-draw" data-reveal-group="slide-left">
+          <li class="index__row" data-reveal-item>
+            <svg class="index__mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="8" height="8"/><rect x="11" y="1" width="8" height="8"/><rect x="1" y="11" width="8" height="8"/><rect x="11" y="11" width="8" height="8"/></svg>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="entity.appraisers">茗強不動產估價師事務所</h3>
+              <p class="index__desc" data-i18n="entity.appraisers.desc">不動產、抵押與公有土地估價，地上權及法律爭議鑑價。</p>
+            </div>
+            <span class="index__licence" lang="en" data-i18n-lang-swap data-i18n="licence.appraiser">Real Estate Appraiser</span>
+          </li>
+          <li class="index__row" data-reveal-item>
+            <svg class="index__mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="8"/><rect x="1" y="11" width="8" height="8"/><rect x="11" y="11" width="8" height="8"/></svg>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="entity.planning">茗強都市計畫技師事務所</h3>
+              <p class="index__desc" data-i18n="entity.planning.desc">都市與非都市土地規劃、土地使用變更、都市更新、市地重劃與開發可行性評估。</p>
+            </div>
+            <span class="index__licence" lang="en" data-i18n-lang-swap data-i18n="licence.planner">Urban Planning Engineer</span>
+          </li>
+          <li class="index__row" data-reveal-item>
+            <svg class="index__mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="8" height="8"/><rect x="11" y="11" width="8" height="8"/><rect x="11" y="1" width="8" height="3"/><rect x="1" y="16" width="8" height="3"/></svg>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="entity.agent">茗強地政士事務所</h3>
+              <p class="index__desc" data-i18n="entity.agent.desc">土地及建物登記、繼承與產權登記、產權移轉。</p>
+            </div>
+            <span class="index__licence" lang="en" data-i18n-lang-swap data-i18n="licence.agent">Land Administration Agent</span>
+          </li>
+          <li class="index__row" data-reveal-item>
+            <svg class="index__mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="8" height="18"/><rect x="11" y="1" width="8" height="8"/><rect x="11" y="11" width="8" height="8"/></svg>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="entity.brokerage">茗強不動產經紀有限公司</h3>
+              <p class="index__desc" data-i18n="entity.brokerage.desc">不動產買賣與租賃、合作開發及企業不動產交易。</p>
+            </div>
+            <span class="index__licence" lang="en" data-i18n-lang-swap data-i18n="licence.broker">Real Estate Broker</span>
+          </li>
+          <li class="index__row" data-reveal-item>
+            <svg class="index__mark" viewBox="0 0 20 20" aria-hidden="true"><rect x="1" y="1" width="18" height="18"/></svg>
+            <div class="index__body">
+              <h3 class="index__title" data-i18n="entity.valuation">茗強資產鑑定有限公司</h3>
+              <p class="index__desc" data-i18n="entity.valuation.desc">機器設備、車輛、航空器、智慧財產權、股權與企業評價。</p>
+            </div>
+            <span class="index__licence" data-i18n="licence.valuer">Certified Business Valuer</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES: STICKY STACK ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <!-- The company mark assembling on a loop; static under reduced motion -->
+        <div class="logo-loop" data-logo-loop>
+          <svg class="logo-loop__svg" viewBox="-210 -160 420 320" role="img" aria-label="茗強標誌：M 互助、R 可靠、A 精確、F 清新、E 熱忱、C 認真" focusable="false" data-i18n-attr="aria-label:logo.aria">
+      <g class="lg-ring">
+      <polygon class="lg-facet" points="0,-100 43.3,-75 0,-56" fill="#0E3A63"/>
+      <polygon class="lg-facet" points="43.3,-75 48.5,-28 0,-56" fill="#1E6FA9"/>
+      <polygon class="lg-facet" points="43.3,-75 86.6,-50 48.5,-28" fill="#2C8BC9"/>
+      <polygon class="lg-facet" points="86.6,-50 86.6,0 48.5,-28" fill="#123F6B"/>
+      <polygon class="lg-facet" points="86.6,0 48.5,28 48.5,-28" fill="#2F8FCB"/>
+      <polygon class="lg-facet" points="86.6,0 86.6,50 48.5,28" fill="#164F86"/>
+      <polygon class="lg-facet" points="86.6,50 43.3,75 48.5,28" fill="#0B2E55"/>
+      <polygon class="lg-facet" points="43.3,75 0,56 48.5,28" fill="#1F6FA8"/>
+      <polygon class="lg-facet" points="43.3,75 0,100 0,56" fill="#3A9AD4"/>
+      <polygon class="lg-facet" points="0,100 -43.3,75 0,56" fill="#164A7C"/>
+      <polygon class="lg-facet" points="-43.3,75 -48.5,28 0,56" fill="#5FB3E0"/>
+      <polygon class="lg-facet" points="-43.3,75 -86.6,50 -48.5,28" fill="#1B5C93"/>
+      <polygon class="lg-facet" points="-86.6,50 -86.6,0 -48.5,28" fill="#0F3B66"/>
+      <polygon class="lg-facet" points="-86.6,0 -48.5,-28 -48.5,28" fill="#2A7FBF"/>
+      <polygon class="lg-facet" points="-86.6,0 -86.6,-50 -48.5,-28" fill="#154A80"/>
+      <polygon class="lg-facet" points="-86.6,-50 -43.3,-75 -48.5,-28" fill="#1A5A90"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-56 -48.5,-28" fill="#3D9BD6"/>
+      <polygon class="lg-facet" points="-43.3,-75 0,-100 0,-56" fill="#0E3A63"/>
+      </g>
+      <polygon class="lg-core" points="0,-56 48.5,-28 48.5,28 0,56 -48.5,28 -48.5,-28" fill="#FFFFFF"/>
+      <g class="lg-mark" transform="translate(-40,-22.4) scale(0.8)" fill="#12345F">
+        <path class="lg-mark-path" d="M0 0h14l14 18 14-18h14v56h-13V22L28 40 13 22v34H0z"/>
+        <path class="lg-mark-path" d="M64 0h36v13H77v30h23v13H64z"/>
+      </g>
+      <g class="lg-values">
+        <g transform="translate(0,-128)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="-4" y="0" text-anchor="end">M</text><text class="lg-word" x="4" y="0" text-anchor="start" lang="zh-Hant">互助</text></g></g>
+        <g transform="translate(106,-64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="0" y="0" text-anchor="start">R</text><text class="lg-word" x="30" y="0" text-anchor="start" lang="zh-Hant">可靠</text></g></g>
+        <g transform="translate(106,64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="0" y="0" text-anchor="start">A</text><text class="lg-word" x="30" y="0" text-anchor="start" lang="zh-Hant">精確</text></g></g>
+        <g transform="translate(0,128)"><g class="lg-value" dominant-baseline="middle"><text class="lg-letter" x="-4" y="0" text-anchor="end">F</text><text class="lg-word" x="4" y="0" text-anchor="start" lang="zh-Hant">清新</text></g></g>
+        <g transform="translate(-106,64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-word" x="-30" y="0" text-anchor="end" lang="zh-Hant">熱忱</text><text class="lg-letter" x="0" y="0" text-anchor="end">E</text></g></g>
+        <g transform="translate(-106,-64)"><g class="lg-value" dominant-baseline="middle"><text class="lg-word" x="-30" y="0" text-anchor="end" lang="zh-Hant">認真</text><text class="lg-letter" x="0" y="0" text-anchor="end">C</text></g></g>
+      </g>
+    </svg>
+        </div>
+        <h2 class="h-display services__title" data-split="words" data-i18n="services.title">找到您的案件類型。</h2>
+        <p class="services__lede" data-split="lede" data-i18n="services.lede">四大執業領域涵蓋土地與不動產的完整生命週期，每一項均由持有相應執照的事務所承辦。</p>
+      </div>
+
+      <div class="stack" data-stack>
+        <article class="stack__card stack__card--paper" data-stack-card>
+          <div class="container stack__inner">
+            <figure class="stack__media img-shell" data-image-reveal="l" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gEnaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ4NjQwNjE0NjkyNi1jNjI3YTkyYWQxYWIgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgYXQgdz0xNjAwOyBubyBpZGVudGlmaWFibGUgcGVyc29uIG9yIGJyYW5kIG1hcms7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAVACADASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAEDBAUGB//EACUQAAICAQIEBwAAAAAAAAAAAAECAAMEBREhIzFREhMiMkFhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABcRAQEBAQAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/AJ9a4mBT4rLQx7AyTp+s495Ke3tMAt1gbmMWEkVZnlNusvU46Nepsr5bDc9JldZsux2IsX9jS66UFNgc8OolhrGXVlYCWooYEcfqMosYhrmYneKW4QhM6uELHaW2hZLtYcd/VWfgwhHkV//Z)">
+              <picture><source type="image/webp" srcset="assets/img/towers-800.webp 800w, assets/img/towers.webp 1600w" sizes="(min-width: 901px) 48vw, 100vw"><img src="assets/img/towers.jpg" width="1600" height="1067" alt="自街道仰望的玻璃帷幕辦公大樓" decoding="async" data-i18n-attr="alt:card1.alt" srcset="assets/img/towers-800.jpg 800w, assets/img/towers.jpg 1600w" sizes="(min-width: 901px) 48vw, 100vw"></picture>
+            </figure>
+            <div class="stack__text">
+              <h3 class="h-section" data-i18n="card1.title">估價與鑑價</h3>
+              <p data-i18n="card1.text">為融資、交易、訴訟與公共徵收提供獨立估價，達到法院與銀行所要求的標準。</p>
+              <ul class="service-list rule-draw">
+                <li data-i18n="card1.li1">不動產估價</li>
+                <li data-i18n="card1.li2">抵押估價</li>
+                <li data-i18n="card1.li3">法律爭議鑑價</li>
+                <li data-i18n="card1.li4">公有土地估價</li>
+                <li data-i18n="card1.li5">地上權估價</li>
+                <li data-i18n="card1.li6">不動產投資與財務分析</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack__dim" aria-hidden="true"></div>
+        </article>
+
+        <article class="stack__card stack__card--base" data-stack-card>
+          <div class="container stack__inner">
+            <figure class="stack__media img-shell" data-image-reveal="r" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gEnaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTUxOTk5OTQ4MjY0OC0yNTA0OWRkZDM3YjEgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgYXQgdz0xNjAwOyBubyBpZGVudGlmaWFibGUgcGVyc29uIG9yIGJyYW5kIG1hcms7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAaACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAHhAAAQQDAQEBAAAAAAAAAAAAAQACAwQRITEFEyL/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/8QAGREAAwEBAQAAAAAAAAAAAAAAAAEhEUEC/9oADAMBAAIRAxEAPwDnIstOQnlOt94QSQCkDDgppUsPBb3AVk5BF5pb1In13Bp0lMg2Uy9Oy+zLl3AlsiDb6HLCYx+to+OUDDWhAN4tYztKqUTxQ1tnLstQbyT1EvO0PJ1bQNdP/9k=)">
+              <picture><source type="image/webp" srcset="assets/img/cityplan-800.webp 800w, assets/img/cityplan.webp 1600w" sizes="(min-width: 901px) 48vw, 100vw"><img src="assets/img/cityplan.jpg" width="1600" height="1279" alt="黃昏時分俯瞰城市，街道與河流燈火通明" decoding="async" data-i18n-attr="alt:card2.alt" srcset="assets/img/cityplan-800.jpg 800w, assets/img/cityplan.jpg 1600w" sizes="(min-width: 901px) 48vw, 100vw"></picture>
+            </figure>
+            <div class="stack__text">
+              <h3 class="h-section" data-i18n="card2.title">規劃與開發</h3>
+              <p data-i18n="card2.text">從單一土地使用變更到整體都市更新計畫，皆由持照都市計畫技師主持規劃。</p>
+              <ul class="service-list rule-draw">
+                <li data-i18n="card2.li1">都市與非都市土地規劃</li>
+                <li data-i18n="card2.li2">開發可行性研究</li>
+                <li data-i18n="card2.li3">土地使用變更</li>
+                <li data-i18n="card2.li4">都市更新</li>
+                <li data-i18n="card2.li5">市地重劃</li>
+                <li data-i18n="card2.li6">土地徵收</li>
+                <li data-i18n="card2.li7">合作開發</li>
+                <li data-i18n="card2.li8">開發權</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack__dim" aria-hidden="true"></div>
+        </article>
+
+        <article class="stack__card stack__card--paper" data-stack-card>
+          <div class="container stack__inner">
+            <figure class="stack__media img-shell" data-image-reveal="l" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gEnaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ1MDEwMTQ5OTE2My1jODg0OGM2NmNhODUgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgYXQgdz0xNjAwOyBubyBpZGVudGlmaWFibGUgcGVyc29uIG9yIGJyYW5kIG1hcms7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAVACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAGBP/EACMQAAICAgEEAgMAAAAAAAAAAAECAAMEBREhIjJBE1EjQpH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECMf/aAAwDAQACEQMRAD8AF1tK2XgP0EUy6SWCoeyI6zVYy1dXVn+4jXp6z5nkepW4iSYzVhdECE8zntpsb9eFmqu1FfogCE7LW2qPxWjj6mzrSwbr7rFccMZo0zLvjHdKUE8F5+yyQ3AciE5Gbe/lYf7KUHT/2Q==)">
+              <picture><source type="image/webp" srcset="assets/img/signing-800.webp 800w, assets/img/signing.webp 1600w" sizes="(min-width: 901px) 48vw, 100vw"><img src="assets/img/signing.jpg" width="1600" height="1068" alt="手持鋼筆簽署文件" loading="lazy" decoding="async" data-i18n-attr="alt:card3.alt" srcset="assets/img/signing-800.jpg 800w, assets/img/signing.jpg 1600w" sizes="(min-width: 901px) 48vw, 100vw"></picture>
+            </figure>
+            <div class="stack__text">
+              <h3 class="h-section" data-i18n="card3.title">登記與移轉</h3>
+              <p data-i18n="card3.text">由持照地政士辦理土地及建物登記，包括繼承登記，以及產權移轉相關的稅務規劃。</p>
+              <ul class="service-list rule-draw">
+                <li data-i18n="card3.li1">土地及建物登記</li>
+                <li data-i18n="card3.li2">繼承登記</li>
+                <li data-i18n="card3.li3">產權登記</li>
+                <li data-i18n="card3.li4">產權移轉</li>
+                <li data-i18n="card3.li5">不動產稅務與財富規劃</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack__dim" aria-hidden="true"></div>
+        </article>
+
+        <article class="stack__card stack__card--base" data-stack-card>
+          <div class="container stack__inner">
+            <figure class="stack__media img-shell" data-image-reveal="r" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gEnaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ1NDE2NTgwNDYwNi1jM2Q1N2JjODZiNDAgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgYXQgdz0xNjAwOyBubyBpZGVudGlmaWFibGUgcGVyc29uIG9yIGJyYW5kIG1hcms7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAVACADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EACMQAAICAgEDBQEAAAAAAAAAAAECAAMEERITITEFIjJBUWH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAYEQEAAwEAAAAAAAAAAAAAAAAAAQIRMf/aAAwDAQACEQMRAD8AwrXolARyG+8vYuXUQApAkqvj09eTHcdMUV8m2G/kdTNT9lyMPIMmZIsewnh7fqO11Y4XmvIxTIyy+0+P5DcMV3iY9hrxyy+ZjZe61ppj3G4QjCb9VPRsh3rcMd6jZrS9yrqO8IRaH//Z)">
+              <picture><source type="image/webp" srcset="assets/img/consult-800.webp 800w, assets/img/consult.webp 1600w" sizes="(min-width: 901px) 48vw, 100vw"><img src="assets/img/consult.jpg" width="1600" height="1068" alt="諮詢會議中桌上的文件與筆記型電腦" loading="lazy" decoding="async" data-i18n-attr="alt:card4.alt" srcset="assets/img/consult-800.jpg 800w, assets/img/consult.jpg 1600w" sizes="(min-width: 901px) 48vw, 100vw"></picture>
+            </figure>
+            <div class="stack__text">
+              <h3 class="h-section" data-i18n="card4.title">交易與顧問</h3>
+              <p data-i18n="card4.text">以本團隊自身的估價與規劃專業為基礎，為業主、家族與企業提供仲介及投資建議。</p>
+              <ul class="service-list rule-draw">
+                <li data-i18n="card4.li1">不動產買賣與租賃</li>
+                <li data-i18n="card4.li2">企業不動產交易</li>
+                <li data-i18n="card4.li3">不動產投資分析</li>
+                <li data-i18n="card4.li4">不動產持有人財富規劃</li>
+                <li data-i18n="card4.li5">開發合作顧問</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stack__dim" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ BEYOND REAL ESTATE ============ -->
+    <section class="section beyond" id="valuation">
+      <div class="container">
+        <h2 class="h-display" data-split="words" data-i18n="beyond.title">評價，不止於不動產。</h2>
+        <p class="beyond__lede" data-split="lede" data-i18n="beyond.lede">茗強資產鑑定為企業評估建築物以外的各項資產，供交易、融資、爭議處理與財務報導之用。</p>
+      </div>
+
+      <div class="marquee" data-marquee data-reveal-marquee aria-label="我們評價的資產類別" data-i18n-attr="aria-label:marquee.aria">
+        <ul class="marquee__track">
+          <li data-i18n="marquee.1">機器</li><li data-i18n="marquee.2">設備</li><li data-i18n="marquee.3">車輛</li><li data-i18n="marquee.4">航空器</li><li data-i18n="marquee.5">商標</li><li data-i18n="marquee.6">專利</li><li data-i18n="marquee.7">著作權</li><li data-i18n="marquee.8">商譽</li><li data-i18n="marquee.9">股權</li><li data-i18n="marquee.10">股份</li><li data-i18n="marquee.11">投資權益</li><li data-i18n="marquee.12">企業</li>
+        </ul>
+        <ul class="marquee__track" aria-hidden="true">
+          <li data-i18n="marquee.1">機器</li><li data-i18n="marquee.2">設備</li><li data-i18n="marquee.3">車輛</li><li data-i18n="marquee.4">航空器</li><li data-i18n="marquee.5">商標</li><li data-i18n="marquee.6">專利</li><li data-i18n="marquee.7">著作權</li><li data-i18n="marquee.8">商譽</li><li data-i18n="marquee.9">股權</li><li data-i18n="marquee.10">股份</li><li data-i18n="marquee.11">投資權益</li><li data-i18n="marquee.12">企業</li>
+        </ul>
+      </div>
+
+      <figure class="band" data-parallax-section>
+        <div class="band__frame img-shell" data-image-reveal style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gFaaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ3NDMwMjc3MDczNy0xNzNlZTIxYmFiNjMgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgdmlhIGh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDc0MzAyNzcwNzM3LTE3M2VlMjFiYWI2Mz93PTE2MDAmcT04MCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCA7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAUACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAYDBQECB//EACIQAAICAgEDBQAAAAAAAAAAAAECAAMEEQYTITEFEiJBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/8QAGREBAAMBAQAAAAAAAAAAAAAAAAESURMx/9oADAMBAAIRAxEAPwBmSmSrSPuLD8uqVW6fk+JX3ciyck6S72/kN5n1amX1nIbDVDUQWJ8SfHFtlStYmtiLCZlSFLM242MO+paJy3DC6IPaTpi01z2ZDEHsYQjFN1GcfI7mjQhDBy//2Q==)">
+          <picture><source type="image/webp" srcset="assets/img/jet-800.webp 800w, assets/img/jet.webp 1600w" sizes="100vw"><img class="band__img" src="assets/img/jet.jpg" width="1600" height="1023" alt="夕陽下停機坪上的私人噴射機" loading="lazy" decoding="async" data-parallax-image data-i18n-attr="alt:band.alt" srcset="assets/img/jet-800.jpg 800w, assets/img/jet.jpg 1600w" sizes="100vw"></picture>
+        </div>
+        <figcaption class="band__caption container" data-i18n="band.caption">航空器、車隊與廠房，與土地一樣以同等嚴謹的方法評價。</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ PUBLIC SECTOR (dark plan view) ============ -->
+    <section class="section public" id="public-sector">
+      <div class="public__bg" aria-hidden="true"></div>
+      <div class="container public__grid">
+        <div class="public__intro">
+          <h2 class="h-display" data-split="words" data-i18n="public.title">受公部門委託。</h2>
+          <p data-split="lede" data-i18n="public.lede">政府機關、地方政府、地政事務所、法院、學校及其他公務機構，委託本團隊辦理必須經得起審計與訴願檢驗的專業工作。</p>
+          <div class="public__photos">
+            <figure class="img-shell" data-image-reveal="l" style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gFaaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ3MDAwNDkxNDIxMi0wNTUyN2U0OTM3MGIgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgdmlhIGh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDcwMDA0OTE0MjEyLTA1NTI3ZTQ5MzcwYj93PTE2MDAmcT04MCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCA7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAARACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAIRAAAgICAgEFAAAAAAAAAAAAAAECAwQREjEhE0FCYXH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwD/xAAaEQEBAAIDAAAAAAAAAAAAAAAAASFBAhES/9oADAMBAAIRAxEAPwBnFxsH0vNqTGY14yr07ItfpxnOU5rhY1FEXffGWuTaJ5u1MR1eXVQ4bhrZmW0ufWkjMWVkQ+0XQypvzIU5+YFnZKjotfaACdLSc/YPgAAaP//Z)"><picture><source type="image/webp" srcset="assets/img/taipei-800.webp 800w, assets/img/taipei.webp 1600w" sizes="(min-width: 901px) 32vw, 100vw"><img src="assets/img/taipei.jpg" width="1600" height="865" alt="從林間山丘眺望黃昏時分的臺灣城市天際線" loading="lazy" decoding="async" data-i18n-attr="alt:public.alt" srcset="assets/img/taipei-800.jpg 800w, assets/img/taipei.jpg 1600w" sizes="(min-width: 901px) 32vw, 100vw"></picture></figure>
+            <figure class="plan-panel" data-image-reveal="u">
+              <canvas data-plan-canvas aria-hidden="true"></canvas>
+              <noscript><img class="plan-panel__static" src="assets/img/plan.png" width="288" height="360" alt="" loading="lazy"></noscript>
+              <figcaption class="plan-panel__caption" data-i18n="public.planCaption">模型平面圖，標的基地以紅色標示。</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="public__lists" data-reveal-group="wipe">
+          <div class="plan-list" data-reveal-item>
+            <h3 class="plan-list__title rule-draw rule-draw--bottom rule-draw--dark" data-i18n="public.whoTitle">委託單位</h3>
+            <ul>
+              <li data-i18n="public.who1">政府機關</li>
+              <li data-i18n="public.who2">地方政府</li>
+              <li data-i18n="public.who3">地政事務所</li>
+              <li data-i18n="public.who4">法院</li>
+              <li data-i18n="public.who5">學校</li>
+              <li data-i18n="public.who6">其他公務機構</li>
+            </ul>
+          </div>
+          <div class="plan-list" data-reveal-item>
+            <h3 class="plan-list__title rule-draw rule-draw--bottom rule-draw--dark" data-i18n="public.whatTitle">承辦項目</h3>
+            <ul>
+              <li data-i18n="public.what1">土地徵收</li>
+              <li data-i18n="card1.li4">公有土地估價</li>
+              <li data-i18n="public.what3">地上權</li>
+              <li data-i18n="card2.li4">都市更新</li>
+              <li data-i18n="card2.li8">開發權</li>
+              <li data-i18n="public.what6">公共建設</li>
+              <li data-i18n="public.what7">機器設備評價</li>
+              <li data-i18n="public.what8">股權評價</li>
+              <li data-i18n="card3.li2">繼承登記</li>
+              <li data-i18n="card3.li4">產權移轉</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEADERSHIP ============ -->
+    <section class="section leader" id="leadership">
+      <div class="container leader__grid">
+        <figure class="leader__media img-shell" data-image-reveal="u" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gCuaW1wZWNjYWJsZTpwcm9tcHQAUG9ydHJhaXQgb2YgRHIuIFN1IFlvdS1EZSBzdXBwbGllZCBieSB0aGUgY2xpZW50IG9uIDIwMjYtMDktMTcgKDYwOXg3NjMgV2ViUCBwYXN0ZWQgaW50byB0aGUgY2hhdCwgY29udmVydGVkIHRvIEpQRUcpLiBDbGllbnQtb3duZWQgcGhvdG9ncmFwaDsgbm90IHN0b2NrLv/bAEMAEgwNEA0LEhAOEBQTEhUbLB0bGBgbNicpICxAOURDPzk+PUdQZldHS2FNPT5ZeVphaW1yc3JFVX2GfG+FZnBybv/bAEMBExQUGxcbNB0dNG5JPklubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubv/AABEIACkAIAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAADBAUGAgf/xAAkEAABAwMEAgMBAAAAAAAAAAABAAIDBAUREhMhMUFRIjJxYf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEQL/2gAMAwEAAhEDEQA/ANo1J113pqE6ZHZd6CbaVAnhYbjI6VmvPtTThcqsr266QXAHaPI8FOnpZ6jjDLi0xN0N84V9x4ROjSglNWQ04zLIG/pUWe6Q1M7tg5A7Kyd4uT6ysc4POjwMo9llDYZgTzhaeaoRajpo4bvDSTt3zweirsFwgqgNqQO/mV5/eJQY4hnJwl7PcHUdcxxcdPlFmKB6rpMDvkm6SfacfRCQH3R29haRlhqqcyO/Erq5XcnlBHZRhH//2Q==)">
+          <!-- Portrait: save the photo as assets/img/founder.jpg (4:5, at least 1200x1500). Until it exists, the plinth below shows instead. -->
+          <picture><source type="image/webp" srcset="assets/img/founder.webp"><img class="leader__portrait" src="assets/img/founder.jpg" width="609" height="783" alt="蘇又德博士肖像" loading="lazy" decoding="async" onerror="this.closest('.leader__media').classList.add('leader__media--pending'); this.remove();" data-i18n-attr="alt:leader.alt"></picture>
+          <div class="plinth">
+            <svg class="plinth__mark" viewBox="-104 -104 208 208" aria-hidden="true" focusable="false"><use href="#mc-logo" x="-104" y="-104" width="208" height="208"/></svg>
+            <p class="plinth__note" data-i18n="leader.pending">蘇又德博士肖像待提供</p>
+          </div>
+        </figure>
+        <div class="leader__text">
+          <h2 class="h-display" data-split="words" data-i18n="leader.title">由蘇又德博士主持。</h2>
+          <p data-split="lede" data-i18n="leader.lede">蘇博士持有本團隊執業所需的全部專業執照，背景橫跨不動產、估價、銀行、理財規劃與都市計畫，並擔任專業團體及政府相關委員會委員。</p>
+          <ul class="creds rule-draw" data-reveal-group="slide-right">
+            <li data-reveal-item><span class="creds__en" data-i18n="cred.appraiser">不動產估價師</span><span class="creds__zh" lang="en" data-i18n-lang-swap data-i18n="licence.appraiser">Real Estate Appraiser</span></li>
+            <li data-reveal-item><span class="creds__en" data-i18n="cred.planner">都市計畫技師</span><span class="creds__zh" lang="en" data-i18n-lang-swap data-i18n="licence.planner">Urban Planning Engineer</span></li>
+            <li data-reveal-item><span class="creds__en" data-i18n="cred.agent">地政士</span><span class="creds__zh" lang="en" data-i18n-lang-swap data-i18n="licence.agent">Land Administration Agent</span></li>
+            <li data-reveal-item><span class="creds__en" data-i18n="cred.broker">不動產經紀人</span><span class="creds__zh" lang="en" data-i18n-lang-swap data-i18n="licence.broker">Real Estate Broker</span></li>
+            <li data-reveal-item><span class="creds__en" data-i18n="licence.valuer">Certified Business Valuer</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACADEMY + VALUES ============ -->
+    <section class="section academy" id="academy">
+      <div class="container academy__grid">
+        <div class="academy__text">
+          <h2 class="h-display" data-split="words" data-i18n="academy.title">茗強學院。</h2>
+          <p data-split="lede" data-i18n="academy.lede">本團隊自設的專業教育機構：土地法規、知識分享，以及各事務所所持證照的考試準備。</p>
+          <figure class="academy__media img-shell" data-image-reveal="r" data-depth style="--lqip:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gFaaW1wZWNjYWJsZTpwcm9tcHQAU3RvY2sgcGhvdG9ncmFwaCBzb3VyY2VkIGZyb20gVW5zcGxhc2ggKFVuc3BsYXNoIExpY2Vuc2UpOiBodHRwczovL3Vuc3BsYXNoLmNvbS9waG90b3MvMTQ5NzM2NjIxNjU0OC0zNzUyNjA3MDI5N2MgOyBkb3dubG9hZGVkIDIwMjYtMDktMTcgdmlhIGh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNDk3MzY2MjE2NTQ4LTM3NTI2MDcwMjk3Yz93PTE2MDAmcT04MCZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCA7IG5vdCBhIE1pbmcgQ2hpYW5nIHByb2plY3QgcGhvdG87IHJlcGxhY2Ugd2l0aCB0aGUgZmlybSdzIG93biBwaG90b2dyYXBoeSB3aGVuIGF2YWlsYWJsZS7/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAIRAAAQQBBQADAAAAAAAAAAAAAQACAwQRBRITITEUIkL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAMAwEAAhEDEQA/AMkuqSD8qEGpGWUMcMZVNmGQu+g6UatWQShzm+JtgkrbdvfG27RnKda/YeM8RwqdQrSTbONvi6VDkjgDXRZIRDqggZTb6hCw2kXEJssPaeihCk//2Q==)">
+            <picture><source type="image/webp" srcset="assets/img/office-800.webp 800w, assets/img/office.webp 1600w" sizes="(min-width: 901px) 44vw, 100vw"><img src="assets/img/office.jpg" width="1600" height="1068" alt="明亮的空辦公室內部" loading="lazy" decoding="async" data-i18n-attr="alt:academy.alt" srcset="assets/img/office-800.jpg 800w, assets/img/office.jpg 1600w" sizes="(min-width: 901px) 44vw, 100vw"></picture>
+          </figure>
+        </div>
+        <div class="values">
+          <h3 class="values__title rule-draw rule-draw--bottom" data-i18n="values.title">團隊的工作方式</h3>
+          <ul class="values__list" data-reveal-lines>
+            <li data-i18n="values.1">誠信正直</li>
+            <li data-i18n="values.2">專業協作</li>
+            <li data-i18n="values.3">法規遵循</li>
+            <li data-i18n="values.4">持續精進</li>
+            <li data-i18n="values.5">知識分享</li>
+            <li data-i18n="values.6">責任承擔</li>
+            <li data-i18n="values.7">客製化服務</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 class="h-display" data-split="words" data-i18n="contact.title">與事務所聯繫。</h2>
+          <p data-split="lede" data-i18n="contact.lede">請說明您的土地、不動產或資產，以及需要解答的問題。臺中事務所將由合適的持照專業人員回覆您。</p>
+
+          <address class="details rule-draw" data-reveal-group="slide-left">
+            <a class="details__row" href="tel:+886422022662" data-reveal-item>
+              <svg class="details__icon" width="22" height="22" aria-hidden="true"><use href="#i-phone"/></svg>
+              <span class="details__label" data-i18n="contact.tel">電話</span>
+              <span class="details__value num">+886-4-2202-2662</span>
+            </a>
+            <div class="details__row" data-reveal-item>
+              <svg class="details__icon" width="22" height="22" aria-hidden="true"><use href="#i-fax"/></svg>
+              <span class="details__label" data-i18n="contact.fax">傳真</span>
+              <span class="details__value num">+886-4-2202-2737</span>
+            </div>
+            <a class="details__row" href="mailto:mingattorney@gmail.com" data-reveal-item>
+              <svg class="details__icon" width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg>
+              <span class="details__label" data-i18n="contact.email">電子郵件</span>
+              <span class="details__value">mingattorney@gmail.com</span>
+            </a>
+            <a class="details__row" href="https://www.google.com/maps/search/?api=1&query=No.+3%2C+Ln.+252%2C+Minquan+Rd.%2C+West+Dist.%2C+Taichung+City%2C+Taiwan" target="_blank" rel="noopener" data-reveal-item>
+              <svg class="details__icon" width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span class="details__label" data-i18n="contact.office">事務所</span>
+              <span class="details__value" data-i18n="contact.address">臺中市西區民權路252巷3號2樓</span>
+            </a>
+          </address>
+
+          <div class="map img-shell img-shell--frame" data-image-reveal="u">
+            <iframe class="map__frame" title="茗強事務所位置圖（臺中市西區）" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%E8%87%BA%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%8D%80%E6%B0%91%E6%AC%8A%E8%B7%AF252%E5%B7%B73%E8%99%9F&z=17&output=embed" data-i18n-attr="title:contact.mapTitle"></iframe>
+          </div>
+        </div>
+
+        <form class="form" data-form novalidate data-reveal-soft-group>
+          <div class="form__field">
+            <label for="f-name" data-i18n="form.name">您的姓名</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <p class="form__error" id="f-name-error" data-i18n="form.nameError">請輸入您的姓名。</p>
+          </div>
+          <div class="form__field">
+            <label for="f-email" data-i18n="form.email">電子郵件</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            <p class="form__error" id="f-email-error" data-i18n="form.emailError">請輸入有效的電子郵件地址。</p>
+          </div>
+          <div class="form__field">
+            <label for="f-subject" data-i18n="form.subject">諮詢主題</label>
+            <select id="f-subject" name="subject" required>
+              <option value="" selected data-i18n="form.subjectPlaceholder">請選擇主題</option>
+              <option data-i18n="form.opt1">估價或鑑價</option>
+              <option data-i18n="form.opt2">規劃或開發</option>
+              <option data-i18n="form.opt3">登記或移轉</option>
+              <option data-i18n="form.opt4">買賣、租賃或交易</option>
+              <option data-i18n="form.opt5">機器設備、智慧財產或企業評價</option>
+              <option data-i18n="entity.academy">茗強學院</option>
+              <option data-i18n="form.opt7">其他</option>
+            </select>
+            <p class="form__error" id="f-subject-error" data-i18n="form.subjectError">請選擇諮詢主題。</p>
+          </div>
+          <div class="form__field">
+            <label for="f-message" data-i18n="form.message">您的訊息</label>
+            <textarea id="f-message" name="message" rows="6" required></textarea>
+            <p class="form__hint" data-i18n="form.hint">不動產或資產位於何處？涉及什麼決策？</p>
+            <p class="form__error" id="f-message-error" data-i18n="form.messageError">請簡單說明您的案件。</p>
+          </div>
+          <div class="form__actions">
+            <button class="btn btn--solid btn--stateful" type="submit" data-form-submit data-magnetic>
+              <span class="btn__label" data-i18n="cta.contact">聯絡我們</span>
+              <span class="btn__busy" aria-hidden="true" data-i18n="form.busy">正在開啟您的郵件程式</span>
+            </button>
+            <p class="form__note" data-i18n="form.note" data-i18n-html>送出後將在您的郵件程式中開啟一封寄給 <span class="nowrap">mingattorney@gmail.com</span> 的預填郵件。本網站不儲存任何資料。</p>
+          </div>
+          <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <svg class="brand__mark" viewBox="-104 -104 208 208" aria-hidden="true" focusable="false"><use href="#mc-logo" x="-104" y="-104" width="208" height="208"/></svg>
+        <p class="site-footer__name" data-i18n="footer.name">茗強地政與土管</p>
+        <p class="site-footer__addr" data-i18n="contact.address">臺中市西區民權路252巷3號2樓</p>
+      </div>
+      <ul class="site-footer__entities" data-reveal-group="soft">
+        <li data-i18n="entity.appraisers">茗強不動產估價師事務所</li>
+        <li data-i18n="entity.planning">茗強都市計畫技師事務所</li>
+        <li data-i18n="entity.agent">茗強地政士事務所</li>
+        <li data-i18n="entity.brokerage">茗強不動產經紀有限公司</li>
+        <li data-i18n="entity.valuation">茗強資產鑑定有限公司</li>
+        <li data-i18n="entity.academy">茗強學院</li>
+      </ul>
+      <div class="site-footer__meta">
+        <a class="site-footer__top" href="#top"><span data-i18n="footer.top">回到頂端</span> <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+        <p data-i18n="footer.copy">© 2026 茗強地政與土管　版權所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js" defer></script>
+  <script src="i18n.js" defer></script>
+<script src="city-layout.js" defer></script>
+  <script src="main.js" defer></script>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }
+  </script>
+  <script type="module" src="hero-model.js" onerror="document.querySelector('[data-hero-stage]').classList.add('no-3d')"></script>
+</body>
+</html>
