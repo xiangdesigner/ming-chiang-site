@@ -34,7 +34,7 @@ External runtime dependencies, all pinned on jsDelivr: gsap 3.13.0, ScrollTrigge
 3. **Project photography.** All photographs are licensed stock. Swap in the firm's own offices, projects and team where available. Keep the same aspect ratios. The plan illustration is generated from the model in code; if you change `city-layout.js`, recapture `assets/img/plan.png` so the no-JavaScript fallback matches.
 4. **Contact form backend.** The form opens the visitor's mail app with a pre-filled message to mingattorney@gmail.com and stores nothing. Connect it to a form service or server endpoint if inbox delivery is preferred.
 5. **Certified Business Valuer.** Rendered in English only; add the Taiwanese credential name if the firm uses one.
-6. **Favicon and social image.** Add `favicon.ico` (or an SVG of the monogram). The `og:image` tag points at `assets/img/poster.jpg` (a render of the model); social networks need an absolute URL, so replace it with the full `https://` address at deploy, ideally a 1200x630 crop.
+6. **Social image.** In place: `assets/img/favicon.svg` (the logo monogram) with `assets/img/favicon.ico` as a fallback. The `og:image` tag points at `assets/img/poster.jpg` (a render of the model); social networks need an absolute URL, so replace it with the full `https://` address at deploy, ideally a 1200x630 crop.
 
 ## Languages
 
